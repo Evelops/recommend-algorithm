@@ -6,7 +6,7 @@ from mlxtend.frequent_patterns import apriori
 
 # sample data with apriori
 # apriori algorith => 가장 빈번하게 일어나는 패턴대로 추천해주는 알고리즘.
-#ex_ 왓차에서 user1 이 주로 보는 영화는 액션, 판타지, 스릴러임 user1은 멜로장르를 거의 안봄.
+#ex_ 왓차에서 user1 이 주로 보는 영화는 액션, 판타지, 스릴러임 user1은 멜로 장르를 거의 안봄.
 # -> apriori algorithm에 근거하면 위의 user1은 액션,판타지, 스릴러를 위주로 영화를 보기 때문에 그와 연관된 영화 목록을 추천해주고 나머지는 배제하고 안 보여줌.
 
 

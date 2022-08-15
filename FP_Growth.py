@@ -13,7 +13,6 @@ data= np.array([
 
 df_data=pd.DataFrame(data)
 # print(df_data)
-
 te=TransactionEncoder()
 te_array=te.fit(data).transform(data)
 df=pd.DataFrame(te_array, columns=te.columns_)
