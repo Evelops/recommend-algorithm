@@ -7,10 +7,10 @@ from mlxtend.frequent_patterns import fpgrowth
 start=time.time()
 
 data= np.array([
-                 ['휴지','물티슈','샴푸'],
-                 ['수세미','물티슈','비누'],
-                 ['휴지','수세미','물티슈','비누'],
-                 ['수세미','비누']
+                 ['휴지', '물티슈', '샴푸'],
+                 ['수세미', '물티슈', '비누'],
+                 ['휴지', '수세미', '물티슈', '비누'],
+                 ['수세미', '비누']
 ])
 
 df_data=pd.DataFrame(data)
@@ -22,5 +22,5 @@ df=pd.DataFrame(te_array, columns=te.columns_)
 # print(df)
 
 # min_support => FP_Growth 알고리즘에서 사용되는 최소 지지도 설정.
-print(fpgrowth(df,min_support=0.5,use_colnames=True))
-print('측정시간:',time.time()-start)
+print(fpgrowth(df, min_support=0.5, use_colnames=True))
+print('측정시간:', time.time()-start)

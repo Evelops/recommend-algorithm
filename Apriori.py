@@ -19,10 +19,11 @@ from mlxtend.frequent_patterns import apriori
 
 start=time.time()
 data= np.array([
-                 ['휴지','물티슈','샴푸'],
-                 ['수세미','물티슈','비누'],
-                 ['휴지','수세미','물티슈','비누'],
-                 ['수세미','비누']
+                 ['수박', '포도'],
+                 ['사과', '딸기'],
+                 ['사과', '딸기', '수박'],
+                 ['딸기', '복숭아', '수박'],
+                 ['사과', '딸기', '복숭아']
 ])
 
 df_data=pd.DataFrame(data)
